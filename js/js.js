@@ -17,7 +17,7 @@ $('.anchr:nth-child(1)').click(function()
 {
 	if(!($('#slidermod').hasClass('displayed')))
 	{
-		$('#unstatic').css('height','632px').children().fadeOut(300).removeClass('displayed');
+		$('#unstatic').children().fadeOut(300).removeClass('displayed');
 		$('#slidermod').delay(300).fadeIn(200).addClass('displayed');
 	}
 });
