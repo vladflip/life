@@ -25,7 +25,7 @@ $('.anchr:nth-child(2)').click(function()
 {
 	if(!($('#bio').css('display')=='block'))
 	{
-		$('#unstatic').css('height','825px').children().fadeOut(300).removeClass('displayed');
+		$('#unstatic').children().fadeOut(300).removeClass('displayed');
 		$('#bio').delay(300).fadeIn(200).addClass('dispalyed');
 	}
 });
@@ -39,7 +39,7 @@ $('.anchr:nth-child(3)').click(function()
 });
 $('.owl-carousel').owlCarousel({
     loop:true,
-    margin:10,
+    margin:100,
     nav:true,
     items:1,
     navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"]
