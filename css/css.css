@@ -14,7 +14,11 @@
 }
 #unstatic
 {
-	height:635px;
+	-webkit-transition: height  .8s ease;
+   -moz-transition: height  .8s ease;
+    -ms-transition: height  .8s ease;
+     -o-transition: height  .8s ease;
+        transition: height  .8s ease;
 }
 #slidermod
 {
