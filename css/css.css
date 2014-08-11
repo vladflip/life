@@ -169,6 +169,7 @@ b
 .owl-dots
 {
 	text-align:center;
+	margin:15px 0 0 0;
 }
 #sliderbio .owl-dot
 {
@@ -185,9 +186,7 @@ b
 }
 #cont
 {
-	position:relative;
-	top:45px;
-	margin:auto;
+	margin:40px auto 0;
 	height:500px;
 	display:none;
 	font-family:'Roboto Condensed';
@@ -307,7 +306,7 @@ b
 	}
 	#cont>div:nth-child(4)
 	{
-		margin:40px 0 40px -20px;
+		margin:40px 0 0px -20px;
 	}
 	#container
 	{
@@ -386,7 +385,7 @@ b
 	}
 	#cont>div:nth-child(4)
 	{
-		margin:40px 0 40px -45px;
+		margin:40px 0 0px -45px;
 	}
 	#container
 	{
