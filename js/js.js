@@ -33,14 +33,19 @@ $('.anchr:nth-child(3)').click(function()
 {
 	if(!($('#cont').css('display')=='block'))
 	{
-		$('#unstatic').css('height','600px').children().fadeOut(300).removeClass('displayed');
+		$('#unstatic').children().fadeOut(300).removeClass('displayed');
 		$('#cont').delay(300).fadeIn(200).addClass('displayed');
 	}
 });
-$('.owl-carousel').owlCarousel({
+$('#slidermod').owlCarousel({
     loop:true,
     margin:100,
     nav:true,
     items:1,
     navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"]
+});
+$('#sliderbio').owlCarousel({
+    loop:true,
+    margin:100,
+    items:1
 });
