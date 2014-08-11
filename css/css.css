@@ -25,7 +25,6 @@
 	margin:auto;
 	height:632px;
 	width:944px;
-	position:absolute;
 }
 #header
 {
@@ -57,6 +56,11 @@ body
 	width:85px;
 	cursor:pointer;
 }
+#slidermod img
+{
+	margin:auto;
+	max-height:632px;
+}
 .anchr div
 {
 	margin-top:10px;
@@ -70,7 +74,7 @@ body
 {
 	position:relative;
 	top:20px;
-	width:940px;
+	width:1000px;
 	margin:auto;
 	background-color:black;
 	height:1px;
@@ -93,6 +97,30 @@ body
 	display:none;
 	position:absolute;
 	width:950px;
+}
+#slidermod .owl-nav
+{
+	position:absolute;
+	top:300px;
+}
+#slidermod .owl-nav div
+{
+	background-color:rgb(245,245,245);
+	height:33px;
+	width:50px;
+	position:absolute;
+}
+#slidermod .owl-nav div:nth-child(1)
+{
+	box-shadow:-5px 5px rgba(100,100,100,0.2);
+	left:-11px;
+	text-align:left;
+}
+#slidermod .owl-nav div:nth-child(2)
+{
+	box-shadow:5px 5px rgba(100,100,100,0.2);
+	left:909px;
+	text-align:right;
 }
 #biotext
 {
@@ -120,7 +148,7 @@ body
 	font-weight:100;
 	font-size:20px;
 }
-i
+#cont i
 {
 	color:#c5c5c5;
 	height:25px;
@@ -175,14 +203,18 @@ b
 }
 @media (min-width: 1000px)
 {
-	#container
+	#container, .item
 	{
 		width:1000px;
 	}
 }
 @media (max-width: 1000px)
 {
-	#container, #slidermod, #footer, #hr, #nav, #bio
+	.owl-nav
+	{
+		display:none;
+	}
+	#container, #slidermod, #footer, #hr, #nav, #bio, .item
 	{
 		width:768px;
 	}
@@ -238,11 +270,15 @@ b
 		position:static;
 	}
 }
-@media (max-width: 768px)
+@media (max-width: 760px)
 {
-	#container, #slidermod, #footer, #hr, #nav, #bio
+	#container, #slidermod, #footer, #hr, #nav, #bio, .item
 	{
 		width:320px;
+	}
+	.owl-nav
+	{
+		display:none;
 	}
 	#unstatic
 	{
@@ -291,4 +327,12 @@ b
 	{
 		position:static;
 	}
+}
+#slidermod i
+{
+	color:#999;
+	height:25px;
+	width:25px;
+	font-size:28px;
+	margin-top:5px;
 }
