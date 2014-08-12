@@ -147,20 +147,42 @@ body
 	font-weight:100;
 	font-size:20px;
 }
-#cont i
+#cont>div:last-child>i
 {
 	color:#c5c5c5;
 	height:25px;
 	width:25px;
 	font-size:28px;
 	margin-left:50px;
+	position:relative;
+	top:0px;
+	-webkit-transition: all .5s ease;
+	   -moz-transition: all .5s ease;
+	    -ms-transition: all .5s ease;
+	     -o-transition: all .5s ease;
+	        transition: all .5s ease;
+
+}
+#cont>div:last-child a{
+	text-decoration: none;
+	color:#c5c5c5;
 }
 b
 {
+	position:relative;
+	top:0px;
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
 	font-weight:bolder;
 	color:#c5c5c5;
 	font-size:28px;
 	margin-left:50px;
+}
+#cont>div:last-child>i:hover,#cont>div:last-child>b:hover {
+	top:-5px;
 }
 #sliderbio img
 {
