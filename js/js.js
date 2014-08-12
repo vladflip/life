@@ -42,10 +42,12 @@ $('#slidermod').owlCarousel({
     margin:100,
     nav:true,
     items:1,
+    autoplay:true,
     navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"]
 });
 $('#sliderbio').owlCarousel({
     loop:true,
     margin:100,
+    autoplay:true,
     items:1
 });
